@@ -4,16 +4,16 @@ from flask import Flask, request, jsonify, render_template
 import pickle
 
 
-app = Flask(__name__)
+app1 = Flask(__name__)
 model = pickle.load(open('house-price.pkl','rb')) 
 
 
-@app.route('/')
+@app1.route('/')
 def home():
   
     return render_template("index1.html")
   
-@app.route('/predict',methods=['GET'])
+@app1.route('/predict',methods=['GET'])
 
 def predict():
     
@@ -30,4 +30,4 @@ def predict():
 
 
 if __name__ == "__main__":
-  app.run(debug = True)
+  app1.run(debug = True)
