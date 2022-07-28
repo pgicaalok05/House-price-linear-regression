@@ -26,7 +26,7 @@ def predict():
     prediction = model.predict([[SqFt]])
     
         
-    return render_template('index.html', prediction_text='Regression Model  has predicted House Price for given Square Foot Area is : {}'.format(prediction))
+    return render_template('index1.html', prediction_text='Regression Model  has predicted House Price for given Square Foot Area is : {}'.format(prediction))
 
 
 if __name__ == "__main__":
