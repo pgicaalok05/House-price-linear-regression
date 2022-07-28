@@ -30,4 +30,4 @@ def predict():
 
 
 if __name__ == "__main__":
-  app1.run(debug = True)
+  app.run(debug = True)
